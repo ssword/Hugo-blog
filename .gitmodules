@@ -1,0 +1,7 @@
+[submodule "ssword/themes/hugo-theme-tokiwa"]
+	path = ssword/themes/hugo-theme-tokiwa
+	url = https://github.com/heyeshuang/hugo-theme-tokiwa.git
+[submodule "ssword/public"]
+	path = ssword/public
+	url = https://github.com/ssword/ssword.github.io.git
+	branch = blog

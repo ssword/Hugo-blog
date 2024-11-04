@@ -1,0 +1,80 @@
+baseURL = 'https://ssword.github.io'
+languageCode = 'zh-cn'
+title = 'Yet Another Hugo Blog'
+hasCJKLanguage = true
+theme = "hugo-theme-tokiwa"
+author = "ssword"
+# Shown in the side menu
+canonifyurls = false
+pagination.pagerSize = 10
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = 'manni'
+# pygmentsUseClasses=true
+
+# pygmentsOptions = "linenos=table,noclasses=true"
+[markup.goldmark]
+[markup.goldmark.extensions]
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
+[permalinks]
+post = "/:year/:month/:day/:filename/"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[indexes]
+tag = "tags"
+topic = "categories"
+
+[params]
+math = true
+env = "production"
+description = """
+  那里的颜色正是常磐色。
+  """
+favicon = "img/favicon.png"
+fuse = true
+useChineseFonts = true
+bannerFont = "fonts/杨任东竹石体-Light"
+
+[menu]
+# Shown in the side menu.
+[[menu.main]]
+name = "归档"
+identifier = "post"
+url = "/post/"
+weight = 1
+[[menu.main]]
+name = "标签"
+url = "/tags/"
+weight = 2
+
+[[menu.main]]
+name = "分类"
+url = "/categories/"
+weight = 2
+
+[[menu.main]]
+name = "关于"
+identifier = "about"
+url = "/about/"
+weight = 3
+
+
+[params.social]
+# Link your social networking accounts to the side menu
+# by entering your username or ID.
+
+# SNS microblogging
+twitter = "https://twitter.com/ssword"
+# googleplus = "贺叶霜HeYSH"
+
+# Techie
+github = "https://github.com/ssword"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
